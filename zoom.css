@@ -1,0 +1,17 @@
+.container {
+    position:static;    
+    overflow: hidden;
+    width: 0px;
+    margin: 0px;
+  }
+  .container img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }

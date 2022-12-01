@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Mineira</title>
+    <link rel="stylesheet" href="cafe.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- link do bootstrap -->
+</head>
+<body>
+    
+  <div id="header">
+  <div class="logo" >                
+          <!-- <img src="../cafelogo.png" alt="" height="70px"> -->
+          <h2>Cafeteria Mineira<h2>
+        </div>        
+        <nav>
+          <form class="search" action="search.php"> 
+            <input name="a" placeholder="Busca..." type="search">
+          </form>
+          <ul>
+            <li>
+              <a href="cafe.html">Quem Somos</a>
+            </li>
+            <li>
+              <a href="nl.html">Nossa Loja</a>                  
+            </li>
+            <li> 
+              <a href="galeria.html">Galeria</a>             
+            </li>
+            <li>
+              <a href="cardapio.html">Cardápio</a>
+            </li>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>      
+    </div>
+
+
+    <!-- Contato         -->
+<div class="sobrenos">
+          
+  <div class="container">
+    <h3><br><br><br>Contato</h3><br>
+            <h5>Funcionamento: Segunda-feira a sábado das 11h às 20h.<br><br>
+            <h5>Telefone: (32)3425-1174<br><br>
+            <h5>Endereço: Rua Joaquim Alves de Araújo, nº 75, Centro<br>Santana de Cataguases - MG<br><br><br>
+  </div>          
+            
+  <div class="container text-left" style="text-align:left;">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Endereço de email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+                                    
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deixe aqui sua mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                <a href="#" class="btn btn-primary" target="_blank">Enviar</a>
+                
+                
+              </div>
+            </div> 
+</div>
+
+<div class="rodape">
+  <div class="row" >
+                       
+                      <div class="col-md-3 text-center">
+                        <div class="logo" >          
+                          <h2>Cafeteria Mineira<h2>                            
+                              <img src="../senai.png" alt="">                            
+                        </div>    
+                      </div>    
+
+
+                      <div class="col-md-3">
+                          <p><br><img src="../instagram.png" alt="" style="width: 30px;" > cafeteria.mineira@instagram </p>
+                          <p><img src="../facebook.png" alt="" style="width: 30px;" > cafeteria.mineira@facebook </p>
+                          <p><img src="../whatsapp.png" alt="" style="width: 30px;" > whatsapp: (32)98475-1633 </p>                          
+                      </div>
+
+                      <div class="col-md-3">                        
+                        <br><a href="cafe.html">Quem Somos</a>
+                        <br><a href="nl.html">Nossa Loja</a>
+                        <br><a href="galeria.html">Galeria</a>
+                        <br><a href="cardapio.html">Cardápio</a>
+                        <br><a href="contato.html">Contato</a>
+                      </div>
+
+                      <div class="col-md-3">
+                          <br>Endereço: Rua Joaquim Alves de Araújo, nº 75, Centro - Santana de Cataguases - MG
+                          
+                                                    
+                      </div>                      
+
+                         
+  </div>
+</div>
+</script>
+
+<script>
+function sendEmail() {
+    console.log("comecou a mandar email");
+    Email.send ( {
+    Host : "smtp.elasticemail.com",
+    Username : "0000946065@senaimgaluno.com.br",
+    Password: "F5597939676DDF5FD57B26313F9AEEA6E40E",
+    To : '0000946065@senaimgaluno.com.br',
+    From: "0000946065@senaimgaluno.com.br",
+    Subject : "Mensagem",
+    Body : "Mensagem"
+    }). then (
+  message => alert (message)
+  );
+}
+</script>
+
+<audio autoplay="autoplay" controls="controls" preload="preload" loop="loop">
+  <source src="Pangya.mp3" type="audio/mp3" />
+</audio>        
+           
+</body>
+</html>
+
+    
+
+  
